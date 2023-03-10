@@ -1,0 +1,17 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+$black: #2c2c2c;
+$green: #159c51;
+
+@import "./Styles/Nav.scss";
+// :root {
+//   --black: 2c2c2c;
+//   --green: 159c51;
+// }
