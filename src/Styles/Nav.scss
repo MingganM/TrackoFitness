@@ -13,12 +13,32 @@
         }
     }
     &__links{
-
+        
     }
     &__link{
+        position: relative;
         margin: 1rem 2rem;
         text-decoration: none;
         color: $green;
         font-size: 2.4rem;
+
+        &::before{
+            content: "";
+            width: 0;
+            height: 6px;
+            background-color: $green;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            border-radius: 4px;
+            transition: width 0.2s;
+        }
+
+        &:hover{
+
+            &::before{
+                width: 100%;
+            }
+        }
     }
 }

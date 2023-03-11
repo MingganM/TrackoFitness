@@ -3,14 +3,20 @@
   padding:0;
   box-sizing:border-box;
 }
+$black: #2c2c2c;
+$white: rgb(229, 229, 229);
+$green: #159c51;
 html {
   font-size: 62.5%;
 }
+body{
+  font-family: 'Noto Serif', serif;
+  color: $black;
+}
 
-$black: #2c2c2c;
-$green: #159c51;
 
 @import "./Styles/Nav.scss";
+@import "./Styles/Banner.scss";
 // :root {
 //   --black: 2c2c2c;
 //   --green: 159c51;

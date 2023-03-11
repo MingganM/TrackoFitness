@@ -1,17 +1,18 @@
 import React from 'react';
-import {  } from "react-icons"; 
+import { FaHome } from "react-icons/fa"; 
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 export default function Nav() {
   return (
     <nav className="nav">
-        <a href="#" className="nav__logo">
+        <Link to="/" className="nav__logo">
             <img src={logo} alt="Logo" />
-        </a>
+        </Link>
 
         <span className="nav__links">
-            <a href="/" className="nav__link">Home</a>
-            <a href="/workout" className="nav__link">Workout</a>
+            <Link to="/" className="nav__link">Home <FaHome /></Link>
+            <Link to="/workout" className="nav__link">Workout</Link>
         </span>
     </nav>
     )

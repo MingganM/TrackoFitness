@@ -1,0 +1,42 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    padding: 2rem;
+    border-bottom-right-radius: 25%;
+
+    @media screen and (min-width: 37.5em){
+    }
+
+    &__content{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    &__title{
+        font-size: 4rem;
+        margin: 3rem auto;
+    }
+    &__link{
+        display: inline-block;
+        margin: 1rem auto;
+        color: $green;
+        font-size: 3rem;
+        text-decoration: none;
+        border: 2px solid $green;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+    }
+    &__img{
+        display: none;
+        @media screen and (min-width: 37.5em){
+            flex: 0 0 48%;
+        }
+        
+        img{
+            width: 100%;
+        }
+    }
+
+}
