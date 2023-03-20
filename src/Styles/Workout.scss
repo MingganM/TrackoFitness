@@ -1,0 +1,99 @@
+.workout{
+    font-size: 2.5rem;
+    background-color: $black;
+    height: calc(100vh - 132px);
+    position: relative;
+    overflow: hidden;
+
+    &__list{
+
+    }
+    &__generate, .singleWorkout__btn{
+        font-size: 2rem;
+        background-color: $green;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border: 2px solid $green;
+        border-radius: 4px;
+        margin: 2rem 1rem;
+
+        &:hover{
+            opacity: 0.8;
+        }
+        svg {
+            transform: translateY(15%);
+        }
+    }
+    .singleWorkout{
+        margin: 1rem 2rem;
+    }
+    .inactive > button{
+        cursor: default;
+        opacity: 0.8;
+    }
+    .singleWorkout__btn{
+        text-transform: uppercase;
+
+        &:last-child{
+            background-color: $red;
+            border-color: $red;
+        }
+    }
+
+    &__avg{
+
+    }
+
+    .generateExercise{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%) scale(1);
+        background-color: $black;
+        padding: 3rem;
+        border-radius: 10px;
+        color: white;
+        width: 80%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid $green;
+        transition: transform 0.4s;
+
+        @media screen and (min-width: 37.5em){
+            width: 550px;
+        }
+
+        &__label{
+            margin-bottom: 0.5rem;
+        }
+        &__input{
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            background-color: $black;
+            color: $white;
+            padding: 0.5rem 1rem;
+            border: 3px solid $green;
+            border-radius: 5px;
+        }
+        &__submit, &__close{
+            font-size: 2.5rem;
+            margin: 3rem 0;
+            padding: 1rem;
+            color: $white;
+            border: 3px solid $green;
+            border-radius: 8px;
+            background-color: $green;
+        }
+        &__close{
+            margin: 0 0 0 auto;
+            padding: 0.5rem;
+            & > *{
+                transform: translateY(15%);
+            }
+        }
+    }
+    .closed{
+        transform:translate(-50%,-50%) scale(0);
+    }
+}
